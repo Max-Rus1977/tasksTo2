@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+body {
+  min-height: 100vh;
+  padding-top: 50px;
+  background-color: #fbfbff;
+  font-family: 'Roboto';
+}
+
+h2 {
+  text-align: center;
+}
+
+.box-container {
+  position: relative;
+  height: 80vh;
+}
+
+.container {
+  position: absolute;
+  max-width: 700px;
+  width: 100%;
+  top: 20%;
+  left: 50%;
+  padding: 30px 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  opacity: 0;
+  transform: scale(0) translateX(0);
+  transition: 0.5s;
+}
+
+.visible-js {
+  opacity: 1;
+  transform: scale(1) translateX(-50%);
+}
+
+.textTask {
+  color: #484646;
+}
+
+span {
+  font-weight: 900;
+  color: black;
+}
+
+.btn {
+  display: block;
+  width: 150px;
+  height: 50px;
+  margin: 30px auto 0 auto;
+  background-color: blue;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: #2196f3;
+  color: #000;
+}
+
+.box-input {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.box-input input {
+  padding: 5px 15px;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+
+.box-input .err-input-js:focus {
+  box-shadow: 0px 0px 7px 0px red;
+}
+
+.box-input input:focus {
+  box-shadow: 0px 0px 7px 0px rgb(0 0 0 / 62%);
+}
+
+.btn__4, .btn__5 {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+
+.btn__4 {
+  right: 208px;
+}
+
+.non-active-js.btn__4:before, .non-active-js.btn__5:before {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  top: -2px;
+  left: -2px;
+  background-color: rgb(155 155 225 / 95%);
+  border-radius: 8px;
+}
+
+.err-input-js {
+  border: 1px solid red;
+}

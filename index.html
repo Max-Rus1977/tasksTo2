@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Задачи к LearnJS 2.1:</h2>
+  <div class="box-container">
+    <div class="container visible-js">
+      <p class="textTask"><span>Задача 1:</span> Сделать кнопку при клике на которой появится alert "уря!"</p>
+      <div class="decision">
+        <form id="form1">
+          <button id="btn-task1" class="btn">CLICK MY</button>
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <p class="textTask"><span>Задача 2:</span> Сделать инпут который при потере фокуса выдает alert "ждем возвращения"</p>
+      <div class="decision">
+        <form id="form2">
+          <p class="box-input">
+            <input id="input-task2" type="text">
+          </p>
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <p class="textTask"><span>Задача 3:</span> Сделать поле ввода с кнопкой, при нажатии на которую текст из инпута появляется в кнопке, дефолтный текст кнопки "опубликовать"</p>
+      <div class="decision">
+        <form id="form2">
+          <p class="box-input">
+            <input class="text-input" type="text">
+          </p>
+          <button id="btn-task3" class="btn btn__3">опубликовать</button>
+        </form>
+      </div>
+    </div>
+    <button id="btn-task4" class="non-active-js btn btn__4" disabled>← Prev task</button>
+    <button id="btn-task5" class="btn btn__5">Next task →</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
